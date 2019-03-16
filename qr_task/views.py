@@ -15,7 +15,7 @@ def index(request):
 
 def scann(request):
     link = func()
-    #return HttpResponse(link)
-    return redirect(str(link))
+    return HttpResponse(link)
+    #return redirect(str(link))
 
 
