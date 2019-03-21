@@ -15,7 +15,13 @@ def index(request):
 
 def scann(request):
     link = func()
-    return HttpResponse(link)
+    return redirect(str(link))
     #return redirect(str(link))
+def qr2(request):
+    place=request.GET.get('place')
+    branch=request.GET.get('branch')
+    server=request.GET.get('server')
+    return HttpResponse(str(place)+str(branch)+str(server))
+    
 
 
